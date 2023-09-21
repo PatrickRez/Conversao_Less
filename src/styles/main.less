@@ -20,14 +20,14 @@ li {
 
 .container {
     max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+    width: #largura[width];
+    margin:0 auto;
 
     @media @breakpointMobile {
         max-width: 70%;
 
         .products-list {
-            display: block;
+            display: #display[display];
 
             &-item {
                 margin-bottom: 32px;
@@ -36,7 +36,6 @@ li {
     }
     @media @breakpointTablet {
         max-width: 80%;
-        background-color: red;
 
         .products-list {
             grid-template-columns: repeat(2, 48.5%);
@@ -47,7 +46,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: #color[backgroundColor];
     position: sticky;
     top: 0;
     left: 0;
@@ -66,7 +65,7 @@ header {
                 margin-left: 24px;
 
                 a {
-                    color: #fff;
+                    color: #color[CorTexto];
                     text-decoration: none;
                 }
             }
@@ -94,13 +93,13 @@ section {
     }
     
     &-button {
-        display: block;
+        display: #display[display];
         background-color: #color[buttonColor];
-        color: #fff;
+        color: #color[CorTexto];
         text-align: center;
         padding: 8px 0;
         border-radius: 8px;
-        margin-top: 8px;
+        margin-top: #margem[margin-top];
         text-decoration: none;
     }
     &-button:hover {
